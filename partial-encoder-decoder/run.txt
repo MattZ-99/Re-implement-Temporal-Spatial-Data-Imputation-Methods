@@ -1,0 +1,35 @@
+CUDA_VISIBLE_DEVICES=0 python Beijing_pbigan_predict.py --missing-type random --missing-rate 0.25
+CUDA_VISIBLE_DEVICES=1 python Beijing_pbigan_predict.py --missing-type random --missing-rate 0.5
+CUDA_VISIBLE_DEVICES=2 python Beijing_pbigan_predict.py --missing-type random --missing-rate 0.75
+
+CUDA_VISIBLE_DEVICES=0 python Beijing_pbigan_predict.py --missing-type spatial --missing-rate 0.25
+CUDA_VISIBLE_DEVICES=0 python Beijing_pbigan_predict.py --missing-type spatial --missing-rate 0.5
+CUDA_VISIBLE_DEVICES=2 python Beijing_pbigan_predict.py --missing-type spatial --missing-rate 0.75
+
+CUDA_VISIBLE_DEVICES=0 python Beijing_pbigan_predict.py --missing-type temporal --missing-rate 0.25
+CUDA_VISIBLE_DEVICES=1 python Beijing_pbigan_predict.py --missing-type temporal --missing-rate 0.5
+CUDA_VISIBLE_DEVICES=2 python Beijing_pbigan_predict.py --missing-type temporal --missing-rate 0.75
+
+CUDA_VISIBLE_DEVICES=0 python Beijing_pbigan_predict.py --missing-type spatial-temporal --missing-rate 0.25
+CUDA_VISIBLE_DEVICES=1 python Beijing_pbigan_predict.py --missing-type spatial-temporal --missing-rate 0.5
+CUDA_VISIBLE_DEVICES=2 python Beijing_pbigan_predict.py --missing-type spatial-temporal --missing-rate 0.75
+
+
+
+---------------------------------------------------------------------------------------------
+
+CUDA_VISIBLE_DEVICES=0 python Beijing_pbigan.py --missing-type random --missing-rate 0.25
+CUDA_VISIBLE_DEVICES=1 python Beijing_pbigan.py --missing-type random --missing-rate 0.5
+CUDA_VISIBLE_DEVICES=2 python Beijing_pbigan.py --missing-type random --missing-rate 0.75
+
+CUDA_VISIBLE_DEVICES=0 python Beijing_pbigan.py --missing-type spatial --missing-rate 0.25
+CUDA_VISIBLE_DEVICES=1 python Beijing_pbigan.py --missing-type spatial --missing-rate 0.5
+CUDA_VISIBLE_DEVICES=2 python Beijing_pbigan.py --missing-type spatial --missing-rate 0.75
+
+CUDA_VISIBLE_DEVICES=0 python Beijing_pbigan.py --missing-type temporal --missing-rate 0.25
+CUDA_VISIBLE_DEVICES=1 python Beijing_pbigan.py --missing-type temporal --missing-rate 0.5
+CUDA_VISIBLE_DEVICES=2 python Beijing_pbigan.py --missing-type temporal --missing-rate 0.75
+
+CUDA_VISIBLE_DEVICES=0 python Beijing_pbigan.py --missing-type spatial-temporal --missing-rate 0.25
+CUDA_VISIBLE_DEVICES=1 python Beijing_pbigan.py --missing-type spatial-temporal --missing-rate 0.5
+CUDA_VISIBLE_DEVICES=2 python Beijing_pbigan.py --missing-type spatial-temporal --missing-rate 0.75
