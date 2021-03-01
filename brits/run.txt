@@ -1,0 +1,146 @@
+CUDA_VISIBLE_DEVICES=3 python Beijing_predict.py --model brits --missing-type random --missing-rate 0.25
+CUDA_VISIBLE_DEVICES=3 python Beijing_predict.py --model brits --missing-type random --missing-rate 0.5
+CUDA_VISIBLE_DEVICES=3 python Beijing_predict.py --model brits --missing-type random --missing-rate 0.75
+
+CUDA_VISIBLE_DEVICES=3 python Beijing_predict.py --model brits --missing-type spatial --missing-rate 0.25
+CUDA_VISIBLE_DEVICES=3 python Beijing_predict.py --model brits --missing-type spatial --missing-rate 0.5
+CUDA_VISIBLE_DEVICES=2 python Beijing_predict.py --model brits --missing-type spatial --missing-rate 0.75
+
+CUDA_VISIBLE_DEVICES=2 python Beijing_predict.py --model brits --missing-type temporal --missing-rate 0.25
+CUDA_VISIBLE_DEVICES=2 python Beijing_predict.py --model brits --missing-type temporal --missing-rate 0.5
+CUDA_VISIBLE_DEVICES=2 python Beijing_predict.py --model brits --missing-type temporal --missing-rate 0.75
+
+CUDA_VISIBLE_DEVICES=3 python Beijing_predict.py --model brits --missing-type spatial-temporal --missing-rate 0.25
+CUDA_VISIBLE_DEVICES=3 python Beijing_predict.py --model brits --missing-type spatial-temporal --missing-rate 0.5
+CUDA_VISIBLE_DEVICES=3 python Beijing_predict.py --model brits --missing-type spatial-temporal --missing-rate 0.75
+
+
+CUDA_VISIBLE_DEVICES=2 python LosAngeles_prediction.py --element_num 207 --model brits --missing-type random --missing-rate 0.25
+CUDA_VISIBLE_DEVICES=2 python LosAngeles_prediction.py --element_num 207 --model brits --missing-type random --missing-rate 0.5
+CUDA_VISIBLE_DEVICES=2 python LosAngeles_prediction.py --element_num 207 --model brits --missing-type random --missing-rate 0.75
+
+CUDA_VISIBLE_DEVICES=3 python LosAngeles_prediction.py --element_num 207 --model brits --missing-type spatial --missing-rate 0.25
+CUDA_VISIBLE_DEVICES=2 python LosAngeles_prediction.py --element_num 207 --model brits --missing-type spatial --missing-rate 0.5
+CUDA_VISIBLE_DEVICES=2 python LosAngeles_prediction.py --element_num 207 --model brits --missing-type spatial --missing-rate 0.75
+
+CUDA_VISIBLE_DEVICES=2 python LosAngeles_prediction.py --element_num 207 --model brits --missing-type temporal --missing-rate 0.25
+CUDA_VISIBLE_DEVICES=2 python LosAngeles_prediction.py --element_num 207 --model brits --missing-type temporal --missing-rate 0.5
+CUDA_VISIBLE_DEVICES=2 python LosAngeles_prediction.py --element_num 207 --model brits --missing-type temporal --missing-rate 0.75
+
+CUDA_VISIBLE_DEVICES=1 python LosAngeles_prediction.py --element_num 207 --model brits --missing-type spatial-temporal --missing-rate 0.25
+CUDA_VISIBLE_DEVICES=2 python LosAngeles_prediction.py --element_num 207 --model brits --missing-type spatial-temporal --missing-rate 0.5
+CUDA_VISIBLE_DEVICES=2 python LosAngeles_prediction.py --element_num 207 --model brits --missing-type spatial-temporal --missing-rate 0.75
+
+
+
+
+
+CUDA_VISIBLE_DEVICES=2 python Shenzhen_prediction.py --batch_size 8 --element_num 165 --model brits --missing-type random --missing-rate 0.25
+CUDA_VISIBLE_DEVICES=0 python Shenzhen_prediction.py --batch_size 8 --element_num 165 --model brits --missing-type random --missing-rate 0.5
+CUDA_VISIBLE_DEVICES=2 python Shenzhen_prediction.py --batch_size 8 --element_num 165 --model brits --missing-type random --missing-rate 0.75
+
+CUDA_VISIBLE_DEVICES=1 python Shenzhen_prediction.py --batch_size 8 --element_num 165 --model brits --missing-type spatial --missing-rate 0.25
+CUDA_VISIBLE_DEVICES=1 python Shenzhen_prediction.py --batch_size 8 --element_num 165 --model brits --missing-type spatial --missing-rate 0.5
+CUDA_VISIBLE_DEVICES=1 python Shenzhen_prediction.py --batch_size 8 --element_num 165 --model brits --missing-type spatial --missing-rate 0.75
+
+CUDA_VISIBLE_DEVICES=2 python Shenzhen_prediction.py --batch_size 8 --element_num 165 --model brits --missing-type temporal --missing-rate 0.25
+CUDA_VISIBLE_DEVICES=2 python Shenzhen_prediction.py --batch_size 8 --element_num 165 --model brits --missing-type temporal --missing-rate 0.5
+CUDA_VISIBLE_DEVICES=2 python Shenzhen_prediction.py --batch_size 8 --element_num 165 --model brits --missing-type temporal --missing-rate 0.75
+
+CUDA_VISIBLE_DEVICES=2 python Shenzhen_prediction.py --batch_size 8 --element_num 165 --model brits --missing-type spatial-temporal --missing-rate 0.25
+CUDA_VISIBLE_DEVICES=2 python Shenzhen_prediction.py --batch_size 8 --element_num 165 --model brits --missing-type spatial-temporal --missing-rate 0.5
+CUDA_VISIBLE_DEVICES=2 python Shenzhen_prediction.py --batch_size 8 --element_num 165 --model brits --missing-type spatial-temporal --missing-rate 0.75
+
+
+------------------------------------------------------------------------------------------------------------------
+CUDA_VISIBLE_DEVICES=0 python Beijing_main.py --model brits --missing-type random --missing-rate 0.25
+CUDA_VISIBLE_DEVICES=1 python Beijing_main.py --model brits --missing-type random --missing-rate 0.5
+CUDA_VISIBLE_DEVICES=2 python Beijing_main.py --model brits --missing-type random --missing-rate 0.75
+
+CUDA_VISIBLE_DEVICES=0 python Beijing_main.py --model brits --missing-type spatial --missing-rate 0.25
+CUDA_VISIBLE_DEVICES=1 python Beijing_main.py --model brits --missing-type spatial --missing-rate 0.5
+CUDA_VISIBLE_DEVICES=2 python Beijing_main.py --model brits --missing-type spatial --missing-rate 0.75
+
+CUDA_VISIBLE_DEVICES=0 python Beijing_main.py --model brits --missing-type temporal --missing-rate 0.25
+CUDA_VISIBLE_DEVICES=1 python Beijing_main.py --model brits --missing-type temporal --missing-rate 0.5
+CUDA_VISIBLE_DEVICES=2 python Beijing_main.py --model brits --missing-type temporal --missing-rate 0.75
+
+CUDA_VISIBLE_DEVICES=0 python Beijing_main.py --model brits --missing-type spatial-temporal --missing-rate 0.25
+CUDA_VISIBLE_DEVICES=1 python Beijing_main.py --model brits --missing-type spatial-temporal --missing-rate 0.5
+CUDA_VISIBLE_DEVICES=2 python Beijing_main.py --model brits --missing-type spatial-temporal --missing-rate 0.75
+
+
+
+CUDA_VISIBLE_DEVICES=0 python LosAngeles_main.py --element_num 207 --model brits --missing-type random --missing-rate 0.25
+CUDA_VISIBLE_DEVICES=1 python LosAngeles_main.py --element_num 207 --model brits --missing-type random --missing-rate 0.5
+CUDA_VISIBLE_DEVICES=2 python LosAngeles_main.py --element_num 207 --model brits --missing-type random --missing-rate 0.75
+
+CUDA_VISIBLE_DEVICES=0 python LosAngeles_main.py --element_num 207 --model brits --missing-type spatial --missing-rate 0.25
+CUDA_VISIBLE_DEVICES=1 python LosAngeles_main.py --element_num 207 --model brits --missing-type spatial --missing-rate 0.5
+CUDA_VISIBLE_DEVICES=2 python LosAngeles_main.py --element_num 207 --model brits --missing-type spatial --missing-rate 0.75
+
+CUDA_VISIBLE_DEVICES=0 python LosAngeles_main.py --element_num 207 --model brits --missing-type temporal --missing-rate 0.25
+CUDA_VISIBLE_DEVICES=1 python LosAngeles_main.py --element_num 207 --model brits --missing-type temporal --missing-rate 0.5
+CUDA_VISIBLE_DEVICES=2 python LosAngeles_main.py --element_num 207 --model brits --missing-type temporal --missing-rate 0.75
+
+CUDA_VISIBLE_DEVICES=0 python LosAngeles_main.py --element_num 207 --model brits --missing-type spatial-temporal --missing-rate 0.25
+CUDA_VISIBLE_DEVICES=1 python LosAngeles_main.py --element_num 207 --model brits --missing-type spatial-temporal --missing-rate 0.5
+CUDA_VISIBLE_DEVICES=2 python LosAngeles_main.py --element_num 207 --model brits --missing-type spatial-temporal --missing-rate 0.75
+
+
+
+CUDA_VISIBLE_DEVICES=0 python Shenzhen_main.py --batch_size 8 --element_num 165 --model brits --missing-type random --missing-rate 0.25
+CUDA_VISIBLE_DEVICES=1 python Shenzhen_main.py --batch_size 8 --element_num 165 --model brits --missing-type random --missing-rate 0.5
+CUDA_VISIBLE_DEVICES=2 python Shenzhen_main.py --batch_size 8 --element_num 165 --model brits --missing-type random --missing-rate 0.75
+
+CUDA_VISIBLE_DEVICES=0 python Shenzhen_main.py --batch_size 8 --element_num 165 --model brits --missing-type spatial --missing-rate 0.25
+CUDA_VISIBLE_DEVICES=1 python Shenzhen_main.py --batch_size 8 --element_num 165 --model brits --missing-type spatial --missing-rate 0.5
+CUDA_VISIBLE_DEVICES=2 python Shenzhen_main.py --batch_size 8 --element_num 165 --model brits --missing-type spatial --missing-rate 0.75
+
+CUDA_VISIBLE_DEVICES=0 python Shenzhen_main.py --batch_size 8 --element_num 165 --model brits --missing-type temporal --missing-rate 0.25
+CUDA_VISIBLE_DEVICES=1 python Shenzhen_main.py --batch_size 8 --element_num 165 --model brits --missing-type temporal --missing-rate 0.5
+CUDA_VISIBLE_DEVICES=2 python Shenzhen_main.py --batch_size 8 --element_num 165 --model brits --missing-type temporal --missing-rate 0.75
+
+CUDA_VISIBLE_DEVICES=0 python Shenzhen_main.py --batch_size 8 --element_num 165 --model brits --missing-type spatial-temporal --missing-rate 0.25
+CUDA_VISIBLE_DEVICES=1 python Shenzhen_main.py --batch_size 8 --element_num 165 --model brits --missing-type spatial-temporal --missing-rate 0.5
+CUDA_VISIBLE_DEVICES=2 python Shenzhen_main.py --batch_size 8 --element_num 165 --model brits --missing-type spatial-temporal --missing-rate 0.75
+
+=================================================================================
+CUDA_VISIBLE_DEVICES=0 python Hangzhou_main.py --batch_size 8 --element_num 81 --model brits --missing-type random --missing-rate 0.25
+CUDA_VISIBLE_DEVICES=0 python Hangzhou_main.py --batch_size 8 --element_num 81 --model brits --missing-type random --missing-rate 0.5
+CUDA_VISIBLE_DEVICES=1 python Hangzhou_main.py --batch_size 8 --element_num 81 --model brits --missing-type random --missing-rate 0.75
+
+CUDA_VISIBLE_DEVICES=1 python Hangzhou_main.py --batch_size 8 --element_num 81 --model brits --missing-type spatial --missing-rate 0.25
+CUDA_VISIBLE_DEVICES=0 python Hangzhou_main.py --batch_size 8 --element_num 81 --model brits --missing-type spatial --missing-rate 0.5
+CUDA_VISIBLE_DEVICES=1 python Hangzhou_main.py --batch_size 8 --element_num 81 --model brits --missing-type spatial --missing-rate 0.75
+
+CUDA_VISIBLE_DEVICES=1 python Hangzhou_main.py --batch_size 8 --element_num 81 --model brits --missing-type temporal --missing-rate 0.25
+CUDA_VISIBLE_DEVICES=0 python Hangzhou_main.py --batch_size 8 --element_num 81 --model brits --missing-type temporal --missing-rate 0.5
+CUDA_VISIBLE_DEVICES=1 python Hangzhou_main.py --batch_size 8 --element_num 81 --model brits --missing-type temporal --missing-rate 0.75
+
+CUDA_VISIBLE_DEVICES=0 python Hangzhou_main.py --batch_size 8 --element_num 81 --model brits --missing-type spatial-temporal --missing-rate 0.25
+CUDA_VISIBLE_DEVICES=1 python Hangzhou_main.py --batch_size 8 --element_num 81 --model brits --missing-type spatial-temporal --missing-rate 0.5
+CUDA_VISIBLE_DEVICES=1 python Hangzhou_main.py --batch_size 8 --element_num 81 --model brits --missing-type spatial-temporal --missing-rate 0.75
+
+====
+CUDA_VISIBLE_DEVICES=0 python Hangzhou_prediction.py --batch_size 8 --element_num 81 --model brits --missing-type random --missing-rate 0.25 --epoch 500
+CUDA_VISIBLE_DEVICES=0 python Hangzhou_prediction.py --batch_size 8 --element_num 81 --model brits --missing-type random --missing-rate 0.5 --epochs 500
+CUDA_VISIBLE_DEVICES=0 python Hangzhou_prediction.py --batch_size 8 --element_num 81 --model brits --missing-type random --missing-rate 0.75 --epochs 300
+
+CUDA_VISIBLE_DEVICES=1 python Hangzhou_prediction.py --batch_size 8 --element_num 81 --model brits --missing-type spatial --missing-rate 0.25 --epochs 300
+CUDA_VISIBLE_DEVICES=1 python Hangzhou_prediction.py --batch_size 8 --element_num 81 --model brits --missing-type spatial --missing-rate 0.5 --epochs 300
+CUDA_VISIBLE_DEVICES=1 python Hangzhou_prediction.py --batch_size 8 --element_num 81 --model brits --missing-type spatial --missing-rate 0.75 --epochs 300
+
+CUDA_VISIBLE_DEVICES=0 python Hangzhou_prediction.py --batch_size 8 --element_num 81 --model brits --missing-type temporal --missing-rate 0.25 --epochs 300
+CUDA_VISIBLE_DEVICES=1 python Hangzhou_prediction.py --batch_size 8 --element_num 81 --model brits --missing-type temporal --missing-rate 0.5 --epochs 300
+CUDA_VISIBLE_DEVICES=2 python Hangzhou_prediction.py --batch_size 8 --element_num 81 --model brits --missing-type temporal --missing-rate 0.75 --epochs 300
+
+CUDA_VISIBLE_DEVICES=2 python Hangzhou_prediction.py --batch_size 8 --element_num 81 --model brits --missing-type spatial-temporal --missing-rate 0.25 --epochs 300
+CUDA_VISIBLE_DEVICES=2 python Hangzhou_prediction.py --batch_size 8 --element_num 81 --model brits --missing-type spatial-temporal --missing-rate 0.5 --epochs 300
+CUDA_VISIBLE_DEVICES=2 python Hangzhou_prediction.py --batch_size 8 --element_num 81 --model brits --missing-type spatial-temporal --missing-rate 0.75 --epochs 300
+
+
+========
+CUDA_VISIBLE_DEVICES=1 python Hangzhou_prediction_step.py --batch_size 8 --element_num 81 --model brits --missing-type spatial-temporal --missing-rate 0.25 --epochs 300
+CUDA_VISIBLE_DEVICES=0 python Hangzhou_prediction_step.py --batch_size 8 --element_num 81 --model brits --missing-type spatial-temporal --missing-rate 0.5 --epochs 300
+CUDA_VISIBLE_DEVICES=0 python Hangzhou_prediction_step.py --batch_size 8 --element_num 81 --model brits --missing-type spatial-temporal --missing-rate 0.75 --epochs 300
